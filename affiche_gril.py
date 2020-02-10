@@ -1,5 +1,7 @@
 
 def affiche(gril):
+    """ Affichage textye de la grille
+    """
     print(" ","0","1","2","3","4","5","6")
     for i in range(6):
         print(i,end='')
