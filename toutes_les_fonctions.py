@@ -80,7 +80,7 @@ def match_nul(gril):
     return True
 
 def victoire(gril,j ,lig , col):
-    if horiz(gril,j,lig , col)==True or diag_bas(gril,j,lig,col)==True or diag_bas(gril, j, lig, col)==True or vert(gril,j,lig,col) :
+    if horiz(gril,j,lig , col)==True or diag_bas(gril,j,lig,col)==True or diag_bas(gril, j, lig, col)==True or vert(gril,j,lig,col)==True:
         return True
     else:
         return False
