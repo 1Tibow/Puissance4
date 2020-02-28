@@ -1,14 +1,12 @@
-def horiz (gril, j, lig, col):
+def horiz (gril, j, lig):
     compteur=0
-    if lig>5:
-        return False
-    if col>3:
-        return False
-    for i in range(4):
-        if gril[lig][col+i]==j:
+    for i in range(7):
+        if gril[lig][i]==j:
             compteur+=1
-    if compteur==4:
-            return True
+            if compteur==4:
+                return True
+        else:
+            compteur=0
     return False
 
 assert horiz([[0, 0, 0, 0, 0, 0, 0],
@@ -16,13 +14,13 @@ assert horiz([[0, 0, 0, 0, 0, 0, 0],
  [0, 0, 0, 0, 0, 0, 0],
  [0, 0, 0, 0, 0, 0, 0],
  [0, 0, 0, 0, 0, 0, 0],
- [0, 0, 1, 1, 1, 1, 0]],1,5,2)==True
+ [1, 0, 1, 1, 1, 1, 0]],1,5)==True
 assert horiz([[0, 0, 0, 0, 0, 0, 0],
  [0, 0, 0, 0, 0, 0, 0],
  [0, 0, 0, 0, 0, 0, 0],
  [0, 0, 0, 0, 0, 0, 0],
  [0, 0, 0, 0, 0, 0, 0],
- [0, 0, 0, 0, 0, 0, 0]],1,5,2)==False
+ [0, 0, 0, 0, 0, 0, 0]],1,5)==False
 
 
 

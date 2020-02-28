@@ -1,3 +1,5 @@
+import random
+
 def grille_vide():
     list_0=[0,0,0,0,0,0,0]
     list=[]
@@ -84,8 +86,8 @@ def victoire(gril,j ,lig , col):
         return True
     else:
         return False
-import random
-def jouer(gril,j,col):
+
+def coup_aleatoire(gril,j,col):
     a=random.randint(0, 6)
     compteur=0
     for i in range(6):

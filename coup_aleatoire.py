@@ -1,6 +1,6 @@
 import random
 a=random.randint(0, 6)
-def jouer(gril,j,col):
+def coup_aleatoire(gril,j,col):
     compteur=0
     for i in range(6):
         if gril[5-i][a]==0 and compteur==0:
