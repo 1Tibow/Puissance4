@@ -232,5 +232,5 @@ while victoire(grille,joueur,ligne,colonne)!=True and match_nul(grille)!=True:
     affiche(grille)
 if victoire(grille,joueur,ligne,colonne)==True:
     print("Le joueur",joueur,"a gagné !")
-if match_nul==True:
+if match_nul(grille)==True:
     print("Dommage, c'est une égalité")
