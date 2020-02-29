@@ -1,3 +1,10 @@
+#Il s'agit d'un programme permettant à deux personnes de jouer à une simulation du célèbre jeu : Puissance 4
+#Pour lancer le jeu, il vous suffit de lancer le programme
+#Il vous suffira alors de répondre à deux questions pour placer un jeton
+#Il vous sera de suite afficher une grille avec votre jeton placé
+#Puis laissez la deuxième personne répondre à son tour et ainsi de suite jusqu'à arriver à une situation final de jeu
+#Bonne chance et amusez-vous
+
 import random
 
 def grille_vide():
@@ -231,6 +238,6 @@ while victoire(grille,joueur,ligne,colonne)!=True and match_nul(grille)!=True:
         print("Coup impossible")
     affiche(grille)
 if victoire(grille,joueur,ligne,colonne)==True:
-    print("Le joueur",joueur,"a gagné !")
+    print("Le joueur",joueur,"a gagné ! Bien joué !")
 if match_nul(grille)==True:
     print("Dommage, c'est une égalité")
